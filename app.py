@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Calculadora Simples")
+st.title("Aula 1 - Calculadora Simples")
 
 # Entrada dos números
 a = st.number_input("Digite o primeiro número", value=0)
@@ -18,7 +18,7 @@ st.write("Subtração:", subtracao)
 st.write("Multiplicação:", multiplicacao)
 st.write("Divisão:", divisao)
 
-st.title("Verificador de Idade")
+st.title("Aula 2 - Verificador de Idade")
 
 idade = st.number_input("Digite a idade", min_value=0, step=1)
 
@@ -31,7 +31,7 @@ elif idade >= 12:
 else:
     st.write("Criança")
 
-st.title("Números Pares e Ímpares de 1 a 20")
+st.title("Aula 3 - Números Pares e Ímpares de 1 a 20")
 
 pares = [n for n in range(1, 21) if n % 2 == 0]
 impares = [n for n in range(1, 21) if n % 2 != 0]
