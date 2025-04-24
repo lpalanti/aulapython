@@ -65,3 +65,22 @@ st.write("Soma:", soma(a, b))
 st.write("Subtração:", subtracao(a, b))
 st.write("Multiplicação:", multiplicacao(a, b))
 st.write("Divisão:", divisao(a, b))
+
+st.title("Aula 5 - Agenda de Contatos")
+
+# Dicionário inicial de contatos
+agenda = {"Lucas": "lucas@email.com", "Maria": "maria@email.com"}
+
+# Mostrar contatos
+st.subheader("Contatos existentes:")
+for nome, email in agenda.items():
+    st.write(f"{nome}: {email}")
+
+# Adicionar novo contato
+st.subheader("Adicionar novo contato")
+novo_nome = st.text_input("Nome", key="novo_nome")
+novo_email = st.text_input("Email", key="novo_email")
+
+if st.button("Adicionar contato", key="botao_adicionar"):
+    agenda[novo_nome] = novo_email
+    st.success(f"Contato {novo_nome} adicionado!")
