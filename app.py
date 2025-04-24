@@ -18,6 +18,7 @@ st.write("Subtração:", subtracao)
 st.write("Multiplicação:", multiplicacao)
 st.write("Divisão:", divisao)
 
+
 st.title("Aula 2 - Verificador de Idade")
 
 idade = st.number_input("Digite a idade", min_value=0, step=1)
