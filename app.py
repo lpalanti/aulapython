@@ -43,3 +43,25 @@ for numero in pares:
 st.subheader("Números Ímpares:")
 for numero in impares:
     st.write(numero)
+
+st.title("Aula 4 - Calculadora com Funções")
+
+a = st.number_input("Digite o primeiro número", value=0)
+b = st.number_input("Digite o segundo número", value=0)
+
+def soma(x, y):
+    return x + y
+
+def subtracao(x, y):
+    return x - y
+
+def multiplicacao(x, y):
+    return x * y
+
+def divisao(x, y):
+    return x / y if y != 0 else "Divisão por zero"
+
+st.write("Soma:", soma(a, b))
+st.write("Subtração:", subtracao(a, b))
+st.write("Multiplicação:", multiplicacao(a, b))
+st.write("Divisão:", divisao(a, b))
