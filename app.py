@@ -34,6 +34,10 @@ else:
 st.title("Números Pares de 1 a 20")
 
 pares = [n for n in range(1, 21) if n % 2 == 0]
+impares = [n for n in range(1, 21) if n % 2 != 0]
 
 for numero in pares:
+    st.write(numero)
+
+for numero in impares:
     st.write(numero)
