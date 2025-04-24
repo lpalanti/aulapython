@@ -18,13 +18,15 @@ st.write("Subtração:", subtracao)
 st.write("Multiplicação:", multiplicacao)
 st.write("Divisão:", divisao)
 
-while True:
-    idade = int(input("Digite a idade (0 para sair): "))
-    if idade == 0:
-        break
-    elif idade >= 18:
-        print("Adulto")
-    elif idade >= 12:
-        print("Adolescente")
-    else:
-        print("Criança")
+st.title("Verificador de Idade")
+
+idade = st.number_input("Digite a idade", min_value=0, step=1)
+
+if idade == 0:
+    st.write("Encerrado.")
+elif idade >= 18:
+    st.write("Adulto")
+elif idade >= 12:
+    st.write("Adolescente")
+else:
+    st.write("Criança")
