@@ -46,8 +46,8 @@ for numero in impares:
 
 st.title("Aula 4 - Calculadora com Funções")
 
-a = st.number_input("Digite o primeiro número", value=0)
-b = st.number_input("Digite o segundo número", value=0)
+a = st.number_input("Digite o primeiro número", value=0, key="num1")
+b = st.number_input("Digite o segundo número", value=0, key="num2")
 
 def soma(x, y):
     return x + y
